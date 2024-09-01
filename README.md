@@ -1,4 +1,6 @@
 # pywrap
+![XW](https://res.cloudinary.com/dxubkzzbx/image/upload/v1725227331/pw_pdmxei.png)
+
 This program encapsulates Python scripts within a C program, enabling them to be executed as standalone executables. It is designed to work exclusively with modules that are included with the default Python installation.
 
 The process is as follows: A compressed, portable Python installation is encapsulated within a .tar archive. This .tar file is then converted into a .h header file. The header file is incorporated into a C program, making its data part of the compiled executable.
