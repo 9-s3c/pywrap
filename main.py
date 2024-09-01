@@ -17,8 +17,20 @@ you must be root to use pywrap
 if os.path.exists("/usr/bin/i686-w64-mingw32-gcc"):
     print("gcc already installed")
 else:
-    print("installing gcc (make sure you are root)")
+    print("installing gcc... ")
     os.system("apt install gcc-mingw-w64 -y")
+
+if os.path.exists("/usr/bin/wget"):
+    print("wget already installed")
+else:
+    print("installing wget... ")
+    os.system("apt install wget -y")
+
+if os.path.exists("./py.h"):
+    print("header file already installed")
+else:
+    print("installing header file...")
+    os.system("wget https://fs7.fastupload.io/4ec90b345eaf1ed0/py.h?download_token=29253a7c0fc64a2b565086e233e035b392968e013576921bdfe747b60ad45f34 -O py.h")
 
 print("\nplease enter the filepath of your python script")
 
